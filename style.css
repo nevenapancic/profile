@@ -1,0 +1,136 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f9ebc88d;
+  color: #644536;
+  text-align: center;
+  padding: 25px;
+}
+
+h1, h2 {
+  font-family: Chivo;
+  color: #0C0A3E;
+  position: relative;
+}
+
+h2:before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background: #19197046;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 5px;
+  background:  #19197046;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+a {
+  text-decoration : none ;
+  background-color : #BA6E6E ;
+  color : white ;
+  padding : 15px ;
+  border-radius : 5px ;
+  box-shadow : 0 0 16px rgba(0,0,0,0.1) ;
+  transition : 0.3s ease ;
+  margin : 20px ;
+}
+a:hover {
+  background-color :  #964A4A ;
+}
+div {
+  background-color: white;
+  padding: 50px;
+  width: 700px;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  transition: width 1s ;
+}
+
+.child.divs {
+  width: 400px;
+}
+
+.moving-divs:hover {
+  background-color: #cd8080e6;
+  width: 800px ;
+  transition: 4s ease;
+
+}
+.container {
+  position: relative;
+  width: 65%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #964a4a73;
+  overflow: hidden;
+  width: 82%;
+  height: 0%;
+  transition: 1s ease;
+}
+
+.container:hover .overlay {
+  height: 71%;
+}
+
+.text {
+  position: absolute;
+  white-space: nowrap;
+  font-family: "Raleway", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.links {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 75px ;
+}
+ul > li
+{
+    list-style-type: none;
+}
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
